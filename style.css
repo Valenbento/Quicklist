@@ -38,4 +38,39 @@ header{
         font-size: 2.4rem;
         margin-bottom: 4.4rem;
     }
+
+    input, button{
+        padding: 1.2rem 1.8rem;
+        width: 100%;
+        font-size: 1.6rem;
+        border-radius: 1.2rem;
+        border: none;
+        outline: none;
+    }
+
+    input {
+        border: 2px solid var(--background-primary);
+        margin-bottom: 1.6rem;
+        color: var(--content-primary);
+    }
+
+    input::placeholder{
+        color: var(--content-tertiary);
+    }
+
+    input:focus{
+        border-color: var(--color-brand);
+    }
+
+    button{
+        background: var(--color-brand);
+        line-height: 2rem;
+        color: var(--always-white);
+        font-weight: 600;
+    }
+
+    button:hover{
+        background: var(--color-brand-hover);
+        transition: .4s;
+    }
 }
