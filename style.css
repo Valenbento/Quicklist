@@ -49,7 +49,7 @@ header{
     }
 
     input {
-        border: 2px solid var(--background-primary);
+        border: 2px solid var(--border-primary);
         margin-bottom: 1.6rem;
         color: var(--content-primary);
     }
@@ -72,5 +72,24 @@ header{
     button:hover{
         background: var(--color-brand-hover);
         transition: .4s;
+    }
+}
+
+.itens{
+    margin-top: 4rem;
+
+    .item{
+        background: var(--background-secondary);
+        margin-bottom: 1.2rem;
+        display: flex;
+        justify-content: center;
+        padding: 1.2rem;
+        align-items: center;
+        border-radius: 1.2rem;
+
+        button{
+            border: none;
+            background: none;
+        }
     }
 }
