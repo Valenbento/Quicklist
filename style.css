@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Inter , sans-serif;
+    font-family: Inter, sans-serif;
 }
 
-:root{
+:root {
     font-size: 62.5%;
 
     --background-primary: #F4F5FB;
@@ -21,25 +21,25 @@
     --border-hover: #B9C2D0;
 }
 
-body{
+body {
     font-size: 1.6rem;
     padding-inline: 3.2rem;
     background: var(--background-primary);
 }
 
-header{
+header {
     display: flex;
     justify-content: center;
     margin-block: 2.5rem 4rem;
 }
 
-.adicionar-item{
-    h1{
+.adicionar-item {
+    h1 {
         font-size: 2.4rem;
         margin-bottom: 4.4rem;
     }
 
-    input, button{
+    input, button {
         padding: 1.2rem 1.8rem;
         width: 100%;
         font-size: 1.6rem;
@@ -54,76 +54,23 @@ header{
         color: var(--content-primary);
     }
 
-    input::placeholder{
+    input::placeholder {
         color: var(--content-tertiary);
     }
 
-    input:focus{
+    input:focus {
         border-color: var(--color-brand);
     }
 
-    button{
+    button {
         background: var(--color-brand);
         line-height: 2rem;
         color: var(--always-white);
         font-weight: 600;
     }
 
-    button:hover{
+    button:hover {
         background: var(--color-brand-hover);
         transition: .4s;
-    }
-}
-
-.itens{
-    margin-top: 4rem;
-
-    .item{
-        background: var(--background-secondary);
-        margin-bottom: 1.2rem;
-        display: flex;
-        justify-content:space-between;
-        padding: 1.2rem;
-        align-items: center;
-        border-radius: 1.2rem;
-
-        button{
-            border: none;
-            background: none;
-        }
-
-.checkbox-customizada {
-    border: 1px solid var(--border-primary);
-    width: 1.6rem;
-    height: 1.6rem;
-    border-radius: 0.6rem;
-    cursor: pointer;
-}
-
-input{
-    display: none;
-}
-
-div{
-    display: flex;
-    align-items: center;
-    gap: 1.2rem;
-}
-
-label {
-    cursor: pointer;
-}
-
-div:has(input:checked) {
-    .checkbox-customizada {
-        background: var(--color-brand);
-        border-color: var(--color-brand);
-        transition: backgound .2s ease;
-    }
-
-    label{
-        text-decoration: line-through;
-    }
-}
     }
 }
