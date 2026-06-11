@@ -37,7 +37,7 @@ function mostrarListaAtualizada() {
                         <img src="./imagens/checked.svg" alt="checked">
                     </div>
 
-                    <label for="item-${i}">${itens[i].descricao}</label> 
+                    <label for="item-${i}" onclick="marcarItem(${i})">${itens[i].descricao}</label> 
                 </div>
 
                 <button onclick="apagarItem(${i})">
@@ -50,6 +50,8 @@ function mostrarListaAtualizada() {
 </div>
         `
     }
+
+    itens.sort((itemA, itemB) => Number(itemA.concluido) - Number(itemB.concluido))
 
     
 
